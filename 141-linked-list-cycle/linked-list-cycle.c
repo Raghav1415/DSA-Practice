@@ -6,7 +6,7 @@
  * struct ListNode {
  * int val;
  * struct ListNode *next;
- * };
+  };
  */
 
 bool hasCycle(struct ListNode *head) {
