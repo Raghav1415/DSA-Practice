@@ -10,10 +10,10 @@ int searchInsert(int* nums, int numsSize, int target) {
             return mid;
         }
         else if(target < nums[mid]){
-            right = mid -1;
+            right--;
         }
         else if(target > nums[mid]){
-            left = mid+1;
+            left++;
         }
     }
     return left;
