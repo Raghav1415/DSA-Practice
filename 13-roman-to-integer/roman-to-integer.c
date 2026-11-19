@@ -21,7 +21,7 @@ int get_value(char s){
 int romanToInt(char* s) {
     int result =0;
     for(int i=0; s[i]!='\0'; i++){
-        if(get_value(s[i]) < get_value(s[i+1])){
+        if(s[i+1] != '\0' && get_value(s[i]) < get_value(s[i+1])){
             result -= get_value(s[i]);
         }
         else{
